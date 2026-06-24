@@ -18,7 +18,7 @@ The project consists of the following files:
 the proximity; for example, it treats 0.001 and 0.002 as seperate areas which means it could take forever to learn.
 
 **Solution:** The implementation of Tile Coding solves this problem elegantly. Tile coding takes distinct tiles, creates multiple layers. Then, the layers are taken one-by-one, stacked on top of previous layer and the next layer
-is shifted to the upper-right by an offset. This has three advantages:
+is shifted to the upper-right by an offset. This has certain advantages:
 
 - The continuous values are now taken as discrete tiles which is efficient to learn.
 - It increases the resolution of each tile; for example a tile spans from 0.0 to 1.0 but there can be a big difference between 0.1 and 0.9, and this resolution increase will account for that.
